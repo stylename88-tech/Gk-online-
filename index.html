@@ -97,7 +97,26 @@
       background: #1e1e1e;
       color: #aaa;
     }
+    /* WhatsApp Floating Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      z-index: 1000;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -111,8 +130,8 @@
 
   <div class="section" id="admitcard">
     <h2>Admit Card</h2>
-    <div class="card">SSC CHSL Admit Card <a href="#" target="_blank" class="btn">Download</a></div>
-    <div class="card">Railway Group D Admit Card <a href="#" target="_blank" class="btn">Download</a></div>
+    <div class="card">SSC CHSL Admit Card <a href="https://ssc.gov.in/" target="_blank" class="btn">Download</a></div>
+    <div class="card">Railway Group D Admit Card <a href="https://indianrailways.gov.in/" target="_blank" class="btn">Download</a></div>
   </div>
 
   <div class="section" id="vacancy">
@@ -138,6 +157,8 @@
     <div class="card">Railway New Recruitment Notification Released <a href="#" target="_blank" class="btn">Read More</a></div>
     <div class="card">CSC New Service Update 2025 <a href="#" target="_blank" class="btn">Read More</a></div>
   </div>
+
+  <a href="https://wa.me/917367913795?text=Hello%20GK%20Online%20Service%20Sir" target="_blank" class="whatsapp-btn"><i class="fa fa-whatsapp"></i></a>
 
   <footer>
     <p id="lastUpdated"></p>
