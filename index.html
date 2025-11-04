@@ -1,59 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GK Online – Sarkari Update & Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GK Online Service – Sabhi Online Kaam Ek Jagah</title>
+  <meta name="description" content="GK Online Service पर पाए सभी सरकारी योजना, स्कॉलरशिप, वेकेंसी, एडमिट कार्ड और अन्य ऑनलाइन सेवाओं की जानकारी।">
+  <meta name="keywords" content="GK Online Service, Sarkari Yojana, Scholarship, Admit Card, Online Form, Vacancy, CSC Services, Gkonline">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: white;
+    }
+
+    header {
+      background-color: #0b3d91;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 1.8em;
+    }
+
+    nav {
+      background: #111827;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #2563eb;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #0b3d91, #111827);
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: #e5e7eb;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .card {
+      background: #1f2937;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #2563eb;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #e5e7eb;
+    }
+
+    footer {
+      background: #0b3d91;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4em;
+      }
+      .hero h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>GK Online</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">GK</a>
-      <a href="#">Sarkari Update</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>GK Online Service</h1>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to GK Online</h2>
-      <p>Daily GK Facts, Sarkari Updates, Admit Card & Quiz in one place.</p>
-    </section>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Vacancy</a>
+    <a href="#">Admit Card</a>
+    <a href="#">Yojana</a>
+    <a href="#">Scholarship</a>
+  </nav>
 
-    <section class="gk-section">
-      <h2>📚 Daily GK Facts</h2>
-      <ul>
-        <li>भारत का संविधान कब लागू हुआ? – 26 जनवरी 1950</li>
-        <li>भारत के प्रथम राष्ट्रपति कौन थे? – डॉ. राजेन्द्र प्रसाद</li>
-        <li>विश्व का सबसे बड़ा महासागर कौन सा है? – प्रशांत महासागर</li>
-      </ul>
-    </section>
+  <section class="hero">
+    <h2>Sabhi Online Kaam Ek Jagah</h2>
+    <p>GK Online Service पर पाए हर सरकारी योजना, फॉर्म, एडमिट कार्ड और स्कॉलरशिप से जुड़ी जानकारी।</p>
+  </section>
 
-    <section class="update-section">
-      <h2>📰 Sarkari Updates</h2>
-      <div class="update-card">
-        <h3>Bihar Board Matric Admit Card 2025</h3>
-        <p>Download now from official website – biharboardonline.com</p>
-      </div>
-      <div class="update-card">
-        <h3>PM Kisan Yojana 17th Installment</h3>
-        <p>Beneficiary list released – Check online by Aadhaar number.</p>
-      </div>
-      <div class="update-card">
-        <h3>Railway Recruitment 2025</h3>
-        <p>Apply online before 20 December 2025 – 5000+ vacancies available.</p>
-      </div>
-    </section>
+  <section class="services">
+    <div class="card">
+      <h3>Vacancy</h3>
+      <p>नई सरकारी नौकरियों की जानकारी और आवेदन लिंक।</p>
+    </div>
 
-    <section class="quiz-section">
-      <h2>🧠 Quick Quiz</h2>
-      <p>भारत की राजधानी क्या है?</p>
-      <button onclick="alert('सही उत्तर: नई दिल्ली ✅')">देखें उत्तर</button>
-    </section>
-  </main>
+    <div class="card">
+      <h3>Admit Card</h3>
+      <p>ताज़ा Admit Card अपडेट और डाउनलोड लिंक।</p>
+    </div>
+
+    <div class="card">
+      <h3>Yojana</h3>
+      <p>सभी सरकारी योजनाओं की जानकारी एक जगह।</p>
+    </div>
+
+    <div class="card">
+      <h3>Scholarship</h3>
+      <p>छात्रवृत्ति और शिक्षा सहायता योजनाओं की जानकारी।</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 GK Online Service | सभी अधिकार सुरक्षित
+  </footer>
+
+</body>
+</html>
+
 
   <footer>
     <p>© 2025 GK Online | Designed by Knoxarya</p>
